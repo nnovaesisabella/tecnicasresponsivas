@@ -40,6 +40,7 @@ const videos = [
         video_id: "2alg7MQ6_sI"
     }
 ];
+
 videos.map(video => {
     const cardClone = card.cloneNode(true);
     cardClone.setAttribute("id", video.video_id);
@@ -67,6 +68,8 @@ cards.forEach(card => {
         document.querySelector("body").style.overflow = "hidden";
     });
 });
+
+
 
 document.querySelector(".close-modal").addEventListener("click", () => {
     modalOverlay.classList.remove("active");
