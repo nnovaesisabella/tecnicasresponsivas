@@ -355,9 +355,10 @@ body {
 .form-group .input-control {
     flex: 1 1;
     display: block;
-    margin: -4px 8px 10px;
-    padding: 12px;
+    margin: 4px 8px 10px;
+    padding: 10px;
     font-size: 1.6rem;
+
 }
 
 #form .button {
@@ -367,11 +368,29 @@ body {
 
 /* =========Medias Queries */
 
+
+
+@media (max-width:872px) {
+
+    .group-wrap .input-control1 {
+        width: 80%;
+    }
+
+    .group-wrap .input-control2 {
+        width: 80%;
+    }
+
+    .group-wrap .input-control3 {
+        width: 50%;
+    }
+}
+
 @media(max-width: 768px) {
 
     html {
         font-size: 50%;
     }
+
 }
 
 @media (max-width:680px) {
@@ -386,10 +405,8 @@ body {
         height: 30px;
         margin-right: 10px;
         margin-top: 10px
-
-
     }
-     
+
     .header .menu-toggle .one,
     .two,
     .three {
@@ -407,7 +424,7 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #918bf3;
+        background-color: #6760f7;
         z-index: 10;
         display: flex;
         align-items: center;
@@ -424,34 +441,35 @@ body {
         top: 15px;
     }
 
-    .menu-section.on .nav ul{
+    .menu-section.on .nav ul {
         text-align: center;
         display: block;
     }
 
-     .menu-section.on .nav ul a{ 
-         transition-duration: 0.5s;
-         font-size: 3rem;
-         display: block;
-         line-height: 4rem;
-     }
+    .menu-section.on .nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        display: block;
+        line-height: 4rem;
+    }
 
 
-     /* Transformation X */
+    /* Transformation X */
 
-    .menu-section.on .menu-toggle .one{
+    .menu-section.on .menu-toggle .one {
         transform: rotate(45deg) translate(8px, 5px);
     }
-     .menu-section.on .menu-toggle .two{
-         opacity: 0;
-     }
 
-      .menu-section.on .menu-toggle .three{
-          transform: rotate(-45deg) translate(6px, -1px);
-      }
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(6px, -1px);
+    }
 
 
-      /* //Hero  */
+    /* //Hero  */
     .hero .container {
         flex-direction: column-reverse;
     }
@@ -465,15 +483,24 @@ body {
 
     .form-group {
         display: block;
+        margin: auto;
     }
 
     .form-group,
     .input-control {
         width: 100%;
+
+
     }
+
 
 }
 
-@media (max-width: 320px){
-    
+@media (max-width: 411px) {
+
+    #form h2 {
+        font-size: 2rem
+    }
+
+
 }
